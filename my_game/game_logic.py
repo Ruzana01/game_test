@@ -10,6 +10,7 @@ class BunkerGame:
         self.searched_safe = False
         self.is_game_over = False
         self.is_won = False
+        
 
     def make_move(self, choice, user_code=None):
         """Выполняет один ход и возвращает текст ответа."""
