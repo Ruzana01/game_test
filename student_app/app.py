@@ -1,3 +1,4 @@
+import flet.app as ft_app
 import flet as ft
 import subprocess
 # Предполагаем, что функция называется get_students (исправлена опечатка)
@@ -82,11 +83,12 @@ def main(page: ft.Page):
         surname,
         age,
         score,
-        ft.ElevatedButton('добавить', on_click=add_click),
+        ft.Button('добавить', on_click=add_click),
         table
     )
     
     # Первоначальная загрузка данных при старте приложения
     refresh_table()
 
-ft.main(main)
+if __name__ == "__main__":
+    ft.run(main) 
